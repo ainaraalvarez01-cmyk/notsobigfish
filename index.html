@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <link rel="stylesheet" href="assets/css/main.css">
   <meta charset="utf-8">
   <title>NOT SO BIG FISH</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
@@ -18,6 +17,8 @@
     #sparkCanvas {
       position: fixed;
       inset: 0;
+      width: 100%;
+      height: 100%;
       pointer-events: none;
       z-index: 9999;
     }
@@ -27,10 +28,172 @@
     }
 
     @media (prefers-reduced-motion: reduce) {
-      #sparkCanvas { display: none; }
+      #sparkCanvas {
+        display: none;
+      }
     }
   </style>
 </head>
+
+<body class="is-preload">
+
+<canvas id="sparkCanvas"></canvas>
+
+<div id="wrapper">
+
+  <!-- Header -->
+  <header id="header">
+    <h1><a href="index.html">NOT SO BIG FISH</a></h1>
+
+    <nav class="links">
+      <ul>
+        <li><a href="elotroladodelcine.html">El otro lado del cine</a></li>
+        <li><a href="reseñas.html">Reseñas</a></li>
+        <li><a href="noticias.html">Noticias</a></li>
+        <li><a href="sobrenosotras.html">Sobre nosotras</a></li>
+      </ul>
+    </nav>
+
+    <nav class="main">
+      <ul>
+        <li class="menu">
+          <a class="fa-bars" href="#menu">Menú</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Menu -->
+  <section id="menu">
+    <section>
+      <ul class="links">
+        <li>
+          <a href="elotroladodelcine.html">
+            <h3>El otro lado del cine</h3>
+            <p>Descubre otra forma de mirar el cine.</p>
+          </a>
+        </li>
+        <li>
+          <a href="reseñas.html">
+            <h3>Reseñas</h3>
+            <p>Déjate recomendar.</p>
+          </a>
+        </li>
+        <li>
+          <a href="noticias.html">
+            <h3>Noticias</h3>
+            <p>Lo último del cine.</p>
+          </a>
+        </li>
+        <li>
+          <a href="sobrenosotras.html">
+            <h3>Sobre nosotras</h3>
+            <p>Conócenos mejor.</p>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </section>
+
+  <!-- Main -->
+  <div id="main">
+
+    <article class="post">
+      <header>
+        <div class="title">
+          <h2><a href="single.html">Cómo Tim Burton conquistó el mundo cinematográfico</a></h2>
+          <p>La apasionante historia del director estadounidense</p>
+        </div>
+        <div class="meta">
+          <time class="published" datetime="2025-11-01">15 noviembre 2025</time>
+          <a href="https://www.instagram.com/ainararepa/" class="author">
+            <span class="name">Ainara Álvarez</span>
+            <img src="images/ainara.png" alt="">
+          </a>
+        </div>
+      </header>
+
+      <a href="single.html" class="image featured">
+        <img src="images/timburtonfoto.jpg" alt="Tim Burton">
+      </a>
+
+      <p>
+        Pocos cineastas han logrado construir un universo tan reconocible como el de Tim Burton...
+      </p>
+
+      <footer>
+        <ul class="actions">
+          <li><a href="single.html" class="button large">Seguir leyendo</a></li>
+        </ul>
+      </footer>
+    </article>
+
+  </div>
+
+  <!-- Sidebar -->
+  <section id="sidebar">
+
+    <section id="intro">
+      <img src="images/favicon.png" alt="" style="width:320px;">
+      <header>
+        <p>Descubre el arte de mirar detrás de la cámara</p>
+      </header>
+    </section>
+
+    <section>
+      <div class="mini-posts">
+
+        <article class="mini-post">
+          <header>
+            <h3><a href="mujeresquehablan.html">Mujeres que hablan</a></h3>
+            <time class="published">12 noviembre 2025</time>
+            <a class="author"><img src="images/ainara.png" alt=""></a>
+          </header>
+          <a href="mujeresquehablan.html" class="image">
+            <img src="images/mujercitashd.jpg" alt="">
+          </a>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="blurb">
+      <h2>Sobre nosotras</h2>
+      <p>
+        Somos un medio dedicado al cine desde una mirada feminista, LGBT+ e interseccional.
+      </p>
+      <ul class="actions">
+        <li><a href="sobrenosotras.html" class="button">Quiero saber más</a></li>
+      </ul>
+    </section>
+
+    <section id="footer">
+      <ul class="icons">
+        <li>
+          <a href="https://www.instagram.com/ainararepa/" class="icon brands fa-instagram">
+            <span class="label">Instagram</span>
+          </a>
+        </li>
+      </ul>
+      <p class="copyright">
+        &copy; Ainara Álvarez
+      </p>
+    </section>
+
+  </section>
+
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
+
 
 
 
